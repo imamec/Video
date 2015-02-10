@@ -27,8 +27,8 @@ class Movie
     private $title;
     
     /**
-     * @var string
-     * @ORM\Column(name="price", type="string", length=20)
+     * @var integer
+     * @ORM\Column(name="price", type="integer", length=10)
      */
     private $price;
     
