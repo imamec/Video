@@ -1,0 +1,56 @@
+<?php
+
+namespace Uek\VideoBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * movie
+ * @ORM\Table(name="movie")
+ * @ORM\Entity
+ */
+class Movie
+{
+    /**
+     * @var integer
+     * 
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     * @ORM\Column(name="title", type="string", length=255)
+     */
+    private $title;
+    
+    /**
+     * @var string
+     * @ORM\Column(name="price", type="string", length=20)
+     */
+    private $price;
+    
+    /**
+     * @var string
+     * @ORM\Column(name="picture", type="string", length=255)
+     */
+    private $picture;
+    
+    /**
+     * @var string
+     * @ORM\Column(name="genere", type="string", length=120)
+     */
+    private $genre;
+    
+    /**
+     * @ORM\OneToMany(targetEntity="Review", mappedBy="movie")
+     **/
+    private $reviews;
+    
+    /**
+     * @ORM\OneToMany(targetEntity="Order", mappedBy="movie")
+     **/
+    private $orders;
+}

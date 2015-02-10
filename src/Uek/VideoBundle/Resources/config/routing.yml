@@ -1,0 +1,3 @@
+uek_video_homepage:
+    path:  /
+    defaults: { _controller: UekVideoBundle:Default:index }

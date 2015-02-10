@@ -1,0 +1,4 @@
+services:
+#    uek_video.example:
+#        class: Uek\VideoBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

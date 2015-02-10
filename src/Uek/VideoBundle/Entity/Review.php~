@@ -1,0 +1,50 @@
+<?php
+
+namespace Uek\VideoBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * review
+ * @ORM\Table(name="review")
+ * @ORM\Entity
+ */
+class Review
+{
+    /**
+     * @var integer
+     * 
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+    
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_movie", type="integer")
+     */
+    private $id_movie;
+    
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_user", type="integer")
+     */
+    private $id_user;
+
+    /**
+     * @var text
+     * 
+     * @ORM\Column(name="content", type="text")
+     */ 
+    private $content; 
+    
+    /**
+     * @ORM\ManyToOne(targetEntity="Movie", inversedBy="reviews")
+     * @ORM\JoinColumn(name="id_movie", referencedColumnName="id")
+     **/
+    private $movie;
+
+}

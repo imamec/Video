@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>VIDEO SREO</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="{{ asset('bundles/uekvideo/css/bootstrap.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('bundles/uekvideo/css/style.css') }}">
+		<script src="{{ asset('bundles/uekvideo/js/jquery-2.1.3.js') }}"></script>
+		<script src="{{ asset('bundles/uekvideo/js/bootstrap.js') }}"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="row">
+				<div class="page-header text-uppercase">
+					{% block header %}
+					{% endblock %}
+				</div>
+			</header>
+			{% if is_granted('ROLE_USER') %}
+				<div class="row">
+					<p>
+						Jesteś zalogowany jako {{app.user.username}}. 
+						<a href="{{path('fos_user_security_logout')}}" class="btn btn-primary">Wyloguj</a>
+					</p>
+				</div>
+			{% else %}
+				<p>
+					Nie jesteś zalogowany - 
+					<a href="{{path('fos_user_security_login')}}" class="btn btn-primary">Zaloguj</a>
+					Jeśli nie masz konta - <a href="{{path('fos_user_registration_register')}}" class="btn btn-primary">Zarejestruj się</a>
+				</p>
+			{% endif %}
+			<div class="row">
+				<div class="col-md-4">
+					{% block menu %}
+					{% endblock %}
+				</div>
+				<div class="col-md-8">
+					{% block content %}
+						{% block fos_user_content %}
+						{% endblock %}
+					{% endblock %}
+				</div>
+			</div>
+			<footer class="row">
+				<p>(c) Copyright Video Sreo</p>
+			</footer>
+		</div>
+	</body>
+</html>
