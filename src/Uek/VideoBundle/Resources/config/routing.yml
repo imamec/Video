@@ -1,3 +1,30 @@
 uek_video_homepage:
     path:  /
-    defaults: { _controller: UekVideoBundle:Default:index }
+    defaults: { _controller: UekVideoBundle:Default:index }    
+uek_video_content1:
+    path:  /Content/1
+    defaults: { _controller: UekVideoBundle:UploadContent:movie1 }
+    
+uek_video_content2:
+    path:  /Content/2
+    defaults: { _controller: UekVideoBundle:UploadContent:movie2 }
+    
+uek_video_content3:
+    path:  /Content/3
+    defaults: { _controller: UekVideoBundle:UploadContent:movie3 }
+
+uek_video_content:
+    path:  /Content/4
+    defaults: { _controller: UekVideoBundle:UploadContent:movie4 }
+    
+uek_video_content5:
+    path:  /Content/5
+    defaults: { _controller: UekVideoBundle:UploadContent:movie5 }
+    
+uek_video_content6:
+    path:  /Content/6
+    defaults: { _controller: UekVideoBundle:UploadContent:movie6 }
+    
+uek_video_content7:
+    path:  /Content/7
+    defaults: { _controller: UekVideoBundle:UploadContent:movie7 }
