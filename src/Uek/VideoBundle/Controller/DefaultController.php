@@ -8,6 +8,25 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('UekVideoBundle:Default:index.html.twig', array());
+    	
+    	$cartItems = 2;
+        return $this->render('UekVideoBundle:Default:index.html.twig', array(
+        		'cartItems' => $cartItems,
+        ));
+        
     }
+    
+    public function moviesAction($movie)
+    
+    {
+    	return $this->render('UekVideoBundle:Movies:m'.$movie.'.html.twig', array());
+    }
+    
+    public function listsAction($list)
+    
+    {
+    	return $this->render('UekVideoBundle:Lists:'.$list.'.html.twig', array());
+    	
+    }
+    
 }
