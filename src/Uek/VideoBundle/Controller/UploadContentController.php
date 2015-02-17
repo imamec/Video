@@ -102,7 +102,7 @@ class UploadContentController extends Controller
 	{
 		$movie = new Movie();
 		$movie->setGenre('Dramat');
-		$movie->setPicture('theShawshankRedemption');
+		$movie->setPicture('theShawshankRedemptionS');
 		$movie->setTitle('Skazani na Shawshank');
 		$movie->setPrice(5);
 			
