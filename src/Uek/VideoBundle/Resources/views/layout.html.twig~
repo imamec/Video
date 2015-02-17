@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>PAN TADEUSZ</title>
+		<title>VIDEO SREO</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="{{ asset('bundles/uekvideo/css/bootstrap.css') }}">
 		<link rel="stylesheet" type="text/css" href="{{ asset('bundles/uekvideo/css/style.css') }}">

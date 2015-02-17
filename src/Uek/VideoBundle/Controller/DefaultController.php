@@ -22,11 +22,4 @@ class DefaultController extends Controller
     	return $this->render('UekVideoBundle:Movies:m'.$movie.'.html.twig', array());
     }
     
-    public function listsAction($list)
-    
-    {
-    	return $this->render('UekVideoBundle:Lists:'.$list.'.html.twig', array());
-    	
-    }
-    
 }

@@ -40,5 +40,5 @@ uek_video_cart:
 
 uek_video_lists:
     path:  /Lists/{list}
-    defaults: { _controller: UekVideoBundle:Default:lists }
+    defaults: { _controller: UekVideoBundle:List:lists }
 

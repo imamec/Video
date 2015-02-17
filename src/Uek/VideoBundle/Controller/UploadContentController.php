@@ -12,7 +12,7 @@ class UploadContentController extends Controller
     {
     	$movie = new Movie();
     	$movie->setGenre('Komedia');
-    	$movie->setPicture('forrestGumpS.jpg');
+    	$movie->setPicture('forrestGumpS');
     	$movie->setTitle('Forrest Gump');
     	$movie->setPrice(5);
     	
@@ -27,7 +27,7 @@ class UploadContentController extends Controller
 	{
 		$movie = new Movie();
 		$movie->setGenre('Komedia');
-		$movie->setPicture('itouchablesS.jpg');
+		$movie->setPicture('intouchablesS');
 		$movie->setTitle('Nietykalni');
 		$movie->setPrice(5);
 		 
@@ -42,7 +42,7 @@ class UploadContentController extends Controller
 	{
 		$movie = new Movie();
 		$movie->setGenre('Gangsterski');
-		$movie->setPicture('pulpFictionS.jpg');
+		$movie->setPicture('pulpFictionS');
 		$movie->setTitle('Pulp Fiction');
 		$movie->setPrice(7);
 			
@@ -57,7 +57,7 @@ class UploadContentController extends Controller
 	{
 		$movie = new Movie();
 		$movie->setGenre('Anime');
-		$movie->setPicture('spiritedAwayS.jpg');
+		$movie->setPicture('spiritedAwayS');
 		$movie->setTitle('W krainie Bogów');
 		$movie->setPrice(6);
 			
@@ -72,7 +72,7 @@ class UploadContentController extends Controller
 	{
 		$movie = new Movie();
 		$movie->setGenre('Gangsterski');
-		$movie->setPicture('theGodfatherS.jpg');
+		$movie->setPicture('theGodfatherS');
 		$movie->setTitle('Ociec Chrzestny');
 		$movie->setPrice(6);
 			
@@ -87,7 +87,7 @@ class UploadContentController extends Controller
 	{
 		$movie = new Movie();
 		$movie->setGenre('Dokumentalny');
-		$movie->setPicture('theInternetsOwnBoyS.jpg');
+		$movie->setPicture('theInternetsOwnBoyS');
 		$movie->setTitle('The internet Own Boy');
 		$movie->setPrice(6);
 			
@@ -102,7 +102,7 @@ class UploadContentController extends Controller
 	{
 		$movie = new Movie();
 		$movie->setGenre('Dramat');
-		$movie->setPicture('theShawshankRedemption.jpg');
+		$movie->setPicture('theShawshankRedemption');
 		$movie->setTitle('Skazani na Shawshank');
 		$movie->setPrice(5);
 			

@@ -1,0 +1,9 @@
+
+{% extends "UekVideoBundle::bars.html.twig" %}
+{% block header %}
+<h1>Video Sreo</h1>
+{% endblock %}
+{% block content %}
+<p>Nienawidze Symfony</p>
+
+{% endblock %} 

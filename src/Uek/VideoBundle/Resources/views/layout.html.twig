@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>VIDEO SREO</title>
+		<title>VIDEO PHPREO</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="{{ asset('bundles/uekvideo/css/bootstrap.css') }}">
 		<link rel="stylesheet" type="text/css" href="{{ asset('bundles/uekvideo/css/style.css') }}">
@@ -14,6 +14,7 @@
 			<header class="row">
 				<div class="page-header text-uppercase">
 					{% block header %}
+					<h1>Video PHPreo</h1>
 					{% endblock %}
 				</div>
 			</header>
@@ -31,6 +32,14 @@
 					Jeśli nie masz konta - <a href="{{path('fos_user_registration_register')}}" class="btn btn-primary">Zarejestruj się</a>
 				</p>
 			{% endif %}
+			
+			<div class="cart">
+				<p>
+					<a href="{{path('uek_video_cart')}}" class="btn btn-primary">Zamówienia</a>
+					<a> {{ cartItems }}</a> {# w kontrolerze dopisze zmienna sesji z iloscia w koszyku, ta linijak i ta na górze mają byc ogok logowania :) #}
+					<a href="{{path('uek_video_homepage')}}" class="btn btn-primary">Strona Główna</a> {#to mozna zmienic na ikonke#}
+				</p>
+			</div>			
 			<div class="row">
 				<div class="col-md-4">
 					{% block menu %}
@@ -44,7 +53,7 @@
 				</div>
 			</div>
 			<footer class="row">
-				<p>(c) Copyright Video Sreo</p>
+				<p>(c) Copyright Video PHPreo</p>
 			</footer>
 		</div>
 	</body>
